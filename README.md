@@ -1,8 +1,51 @@
-# A-B Testing
-This project will be a beginners framework to A/B testing, what to do, how to do it and how to get the most useful results for your business question.
+# 🧪 Homepage A/B Testing — Bike Shop Loyalty Program
 
-## The Scenario
-An online bicycle store has changed its home page interface to encourage visitors to click through to its loyalty programme sign-up page. It hopes the new interface will encourage more visitors to access the loyalty programme page, to see what benefits the programme brings, and to sign up. The current click-through rate (CTR) is around 50% annually, and the company hopes the new design will push this to at least 55%.
+This project evaluates the impact of a homepage design change on user engagement with the loyalty program of an online bicycle store. Using a full A/B testing workflow—from power analysis to statistical inference—the notebook assesses whether the new interface boosts click-through rates (CTR) to the loyalty sign-up page.
 
-## The Objective
-Run an A/B test on the data to measure the significance of the interface change based on CTR to the loyalty programme page. Users on the server ID1 are the treatment group and those on ID2 and ID3 are the control groups.
+---
+
+## 🎯 Objective
+
+The store aimed to increase CTR from 50% to at least 55% by redesigning its homepage. This test investigates whether the change produced a statistically significant improvement in user engagement.
+
+---
+
+## 🛠️ Methodology
+
+- **Power Analysis**  
+  Determined the required sample size to detect a 5% uplift in CTR with sufficient statistical power.
+
+- **Data Cleaning & Preparation**  
+  Removed duplicates, normalized column names, and ensured input consistency.
+
+- **Group Assignment**  
+  Randomized users into control and treatment groups using server IDs for unbiased comparison.
+
+- **Sampling & Balance Checks**  
+  Drew equal-sized samples and validated group similarity.
+
+- **Statistical Testing**  
+  Performed a two-proportion z-test to compare CTRs and assess significance.
+
+---
+
+## 📈 Results
+
+- The new homepage led to a *slight decrease* in click-throughs to the loyalty page.
+- The difference was statistically significant (*p < 0.05*), resulting in rejection of the null hypothesis.
+- The redesign negatively impacted user engagement, providing valuable feedback for future UX decisions.
+
+---
+
+## 🔍 Insights
+
+- Even small UI changes can have measurable effects on user behavior.
+- Rigorous experimentation is essential for evaluating product improvements.
+- The project serves as a reusable blueprint for running A/B tests—from planning to interpretation.
+
+---
+
+## 🧬 Tools Used
+
+- **Python**: Pandas, NumPy, SciPy  
+- **Statistical Techniques**: Power analysis, random sampling, hypothesis testing
